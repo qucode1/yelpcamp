@@ -1,0 +1,70 @@
+body {
+    min-width: 300px;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.center {
+    margin: 0 auto;
+    /*max-width: 500px;*/
+}
+.field {
+    position: relative;
+    max-width: 400px;
+    height: auto;
+    padding: 0;
+    margin: 0 auto 30px auto;
+    display: block;
+    overflow: hidden;
+    box-shadow: 2px 2px 5px dimgray, 1px 1px 2px black;
+}        
+.field::before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+}
+.content div {
+    display: flex;
+}
+.caption {
+    padding-top: 5%;
+}
+.caption h4 {
+    width: 100%;
+}
+.infoButton a {
+    margin: 0 auto;
+}
+@media only screen and (min-width: 992px){
+    .caption {
+        padding-top: 0;
+    }
+}
+/*Show page styles*/
+.thumbnail {
+    padding: 0;
+}
+.caption-full {
+    padding: 10px;
+}
+.well {
+    margin-top: 20px;
+}
+.deleteForm {
+    display: inline;
+}
+.inline {
+    display: inline;
+}
+.clear{
+    clear: both;
+}
