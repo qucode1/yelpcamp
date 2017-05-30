@@ -16,7 +16,8 @@ var indexRoutes      = require("./routes/index"),
     campgroundRoutes = require("./routes/campground"),
     commentRoutes    = require("./routes/comments");
 
-mongoose.connect("mongodb://localhost/yelpcamp");
+var mlabDb = "mongodb://quinius:" + process.env.MLABPW + "@ds157521.mlab.com:57521/yelpcamp";
+mongoose.connect(mlabDb);
 app.set("view engine", "ejs");
 
 app.use(flash());
